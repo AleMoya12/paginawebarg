@@ -1,0 +1,51 @@
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 3001
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3001
+
+ ✓ Ready in 2.1s
+ ✓ Compiled /page in 853ms (505 modules)
+ ✓ Compiled /servicios/page in 1456ms (527 modules)
+ ✓ Compiled /portfolio/page in 349ms (522 modules)
+ ✓ Compiled /contacto/page in 196ms (524 modules)
+ ✓ Compiled /nosotros/page in 255ms (529 modules)
+ ✓ Compiled /web-premium/page in 276ms (531 modules)
+ ✓ Compiled in 1218ms (540 modules)
+ ✓ Compiled in 296ms (267 modules)
+ ✓ Compiled in 173ms (267 modules)
+ ✓ Compiled in 275ms (267 modules)
+ ✓ Compiled in 333ms (540 modules)
+ ✓ Compiled in 232ms (267 modules)
+ ✓ Compiled in 214ms (267 modules)
+ ✓ Compiled in 722ms (540 modules)
+ ✓ Compiled in 204ms (267 modules)
+ ✓ Compiled in 457ms (540 modules)
+ ✓ Compiled in 189ms (267 modules)
+ ✓ Compiled in 172ms (267 modules)
+ ✓ Compiled in 283ms (540 modules)
+ ✓ Compiled in 290ms (540 modules)
+ ✓ Compiled in 265ms (267 modules)
+ ✓ Compiled in 169ms (267 modules)
+ ✓ Compiled in 139ms (267 modules)
+ ✓ Compiled in 337ms (540 modules)
+ ✓ Compiled in 293ms (540 modules)
+ ✓ Compiled in 306ms (540 modules)
+ ✓ Compiled in 809ms (540 modules)
+ ✓ Compiled in 242ms (267 modules)
+ ✓ Compiled /servicios/page in 317ms (278 modules)
+ ✓ Compiled /not-found in 672ms (690 modules)
+ ✓ Compiled in 462ms (694 modules)
+ ✓ Compiled in 157ms (387 modules)
+ ✓ Compiled in 190ms (387 modules)
+ ✓ Compiled in 266ms (694 modules)
+ ✓ Compiled in 712ms (694 modules)
+ ✓ Compiled in 625ms (694 modules)
+ ✓ Compiled in 912ms (694 modules)
+ ✓ Compiled in 731ms (694 modules)
+ ✓ Compiled in 188ms (387 modules)
+ ✓ Compiled /servicios/page in 315ms (312 modules)
+ ✓ Compiled /not-found in 232ms (690 modules)
+ ✓ Compiled /web-para-pymes/page in 892ms (698 modules)
+[?25h

@@ -1,0 +1,34 @@
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 3000
+
+"pnpm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3000
+
+ ✓ Ready in 1888ms
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled /page in 1789ms (472 modules)
+ ✓ Compiled /web-premium/page in 328ms (476 modules)
+ ✓ Compiled /web-para-profesionales/page in 165ms (464 modules)
+ ✓ Compiled /web-autoadministrable/page in 174ms (466 modules)
+ ✓ Compiled /tienda-online/page in 142ms (468 modules)
+ ✓ Compiled /nosotros/page in 228ms (470 modules)
+ ✓ Compiled /web-para-pymes/page in 343ms (472 modules)
+ ✓ Compiled /nosotros/page in 103ms (243 modules)
+ ✓ Compiled /contacto/page in 220ms (476 modules)
+ ✓ Compiled /blog/page in 224ms (476 modules)
+ ✓ Compiled /publicidad/page in 176ms (478 modules)
+ ✓ Compiled /web-para-prepagas/page in 404ms (486 modules)
+ ✓ Compiled /web-para-pymes/page in 99ms (241 modules)
+ ✓ Compiled /web-para-hoteles/page in 294ms (486 modules)
+ ✓ Compiled /web-para-escuelas/page in 343ms (485 modules)
+ ✓ Compiled /web-para-barrios-cerrados/page in 523ms (485 modules)
+ ✓ Compiled /page in 75ms (240 modules)
+ ✓ Compiled /nosotros/page in 122ms (241 modules)
+ ✓ Compiled /servicios/page in 588ms (486 modules)
+ ✓ Compiled /portfolio/page in 380ms (487 modules)
+ ✓ Compiled /publicidad/page in 134ms (242 modules)

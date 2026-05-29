@@ -1,0 +1,35 @@
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 3001
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3001
+
+ ✓ Ready in 2s
+ ✓ Compiled /page in 854ms (505 modules)
+ ✓ Compiled /nosotros/page in 1383ms (525 modules)
+ ✓ Compiled in 175ms (262 modules)
+ ✓ Compiled /servicios/page in 394ms (518 modules)
+ ✓ Compiled /portfolio/page in 323ms (527 modules)
+ ✓ Compiled /not-found in 124ms (277 modules)
+ ✓ Compiled /blog/page in 388ms (533 modules)
+ ✓ Compiled /contacto/page in 277ms (535 modules)
+ ✓ Compiled /publicidad/page in 254ms (537 modules)
+ ✓ Compiled /web-premium/page in 448ms (545 modules)
+ ✓ Compiled /web-para-profesionales/page in 368ms (545 modules)
+ ✓ Compiled /web-autoadministrable/page in 449ms (542 modules)
+ ✓ Compiled /tienda-online/page in 454ms (538 modules)
+ ✓ Compiled /web-para-prepagas/page in 368ms (536 modules)
+ ✓ Compiled /web-para-pymes/page in 467ms (536 modules)
+ ✓ Compiled in 389ms (534 modules)
+ ✓ Compiled /web-para-hoteles/page in 251ms (522 modules)
+ ✓ Compiled /web-para-escuelas/page in 303ms (522 modules)
+ ✓ Compiled /web-para-barrios-cerrados/page in 302ms (522 modules)
+ ✓ Compiled /contacto/page in 131ms (269 modules)
+ ✓ Compiled in 951ms (534 modules)
+ ✓ Compiled in 680ms (534 modules)
+ ✓ Compiled in 217ms (267 modules)
+ ✓ Compiled /not-found in 169ms (270 modules)
+ ✓ Compiled /_error in 728ms (693 modules)
+ ✓ Compiled /page in 327ms (303 modules)
+ ✓ Compiled /_error in 233ms (678 modules)

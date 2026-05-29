@@ -1,0 +1,103 @@
+import { WA } from "@/lib/whatsapp"
+
+export const designServices = [
+  {
+    title: "Web para Pymes",
+    price: "Desde USD 549",
+    href: "/web-para-pymes",
+    cta: "Ver más",
+    icon: "building",
+    short: "Tu presencia digital profesional lista en días. Ideal para comercios, estudios y servicios.",
+    detail: "Sitio institucional profesional para mostrar servicios, captar consultas y transmitir confianza desde el primer contacto.",
+  },
+  {
+    title: "Tienda Online",
+    price: "Desde USD 999",
+    href: "/tienda-online",
+    cta: "Ver más",
+    icon: "cart",
+    short: "Vendé las 24 horas sin intermediarios. Cobrá online, gestioná tu stock y expandí tu mercado.",
+    detail: "E-commerce preparado para catálogo, pagos, envíos, WhatsApp y administración simple de productos.",
+  },
+  {
+    title: "Web Premium",
+    price: "Desde USD 899",
+    href: "/web-premium",
+    cta: "Ver más",
+    icon: "star",
+    short: "Diseño exclusivo para destacar de la competencia. Sin plantillas, desde cero.",
+    detail: "Experiencia visual a medida para empresas que necesitan una presencia diferencial y más elaborada.",
+  },
+  {
+    title: "Web para Profesionales",
+    price: "Desde USD 699",
+    href: "/web-para-profesionales",
+    cta: "Ver más",
+    icon: "briefcase",
+    short: "Para médicos, abogados, contadores y consultores. Tu imagen profesional online.",
+    detail: "Estructura pensada para explicar servicios, presentar trayectoria y generar consultas calificadas.",
+  },
+  {
+    title: "Web Autoadministrable",
+    price: "Desde USD 799",
+    href: "/web-autoadministrable",
+    cta: "Ver más",
+    icon: "settings",
+    short: "Actualizás el contenido vos mismo, sin conocimientos técnicos. Panel simple e intuitivo.",
+    detail: "Incluye panel de gestión para editar textos, secciones, novedades o productos sin depender de soporte técnico.",
+  },
+  {
+    title: "Mantenimiento Web",
+    price: "USD 49/mes",
+    href: WA.mantenimiento,
+    cta: "Consultar",
+    icon: "shield",
+    short: "Tu web siempre actualizada, segura y funcionando. Soporte directo por WhatsApp.",
+    detail: "Soporte mensual para actualizaciones, seguridad, cambios menores, backups y monitoreo general.",
+  },
+]
+
+export const portfolioProjects = [
+  {
+    category: "SALUD",
+    name: "Centro Médico",
+    description: "Web institucional para centro médico con agenda de turnos y especialidades.",
+    extended: "Arquitectura clara por especialidad, llamadas directas a turnos y contenido optimizado para búsquedas locales.",
+    tags: ["Web Profesional", "SEO"],
+  },
+  {
+    category: "BELLEZA",
+    name: "Spa & Relax",
+    description: "Landing page para centro de estética con galería de servicios y botón WhatsApp.",
+    extended: "Landing enfocada en conversión, paquetes destacados y contacto rápido para reservas por WhatsApp.",
+    tags: ["Landing Page", "WhatsApp"],
+  },
+  {
+    category: "EDUCACIÓN",
+    name: "KidKinder",
+    description: "Web institucional para jardín de infantes con inscripciones online.",
+    extended: "Sitio cálido y organizado con propuesta pedagógica, niveles, galería e inscripción online.",
+    tags: ["Web Institucional", "Formulario"],
+  },
+  {
+    category: "ODONTOLOGÍA",
+    name: "Consultorio Dental",
+    description: "Web para consultorio odontológico con turnos online y especialidades.",
+    extended: "Presencia profesional con servicios odontológicos, preguntas frecuentes y acceso rápido a turnos.",
+    tags: ["Web Profesional", "SEO"],
+  },
+  {
+    category: "PSICOLOGÍA",
+    name: "Consultorio Psicológico",
+    description: "Web minimalista para psicóloga con descripción de metodología y contacto.",
+    extended: "Diseño sobrio, textos sensibles y recorrido pensado para generar confianza antes de la consulta.",
+    tags: ["Web Profesional"],
+  },
+  {
+    category: "VETERINARIA",
+    name: "Clínica Veterinaria",
+    description: "Web para clínica veterinaria con servicios, galería y WhatsApp directo.",
+    extended: "Sitio para servicios veterinarios, urgencias, ubicación y consultas desde dispositivos móviles.",
+    tags: ["Web para Pymes", "WhatsApp"],
+  },
+]

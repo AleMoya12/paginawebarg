@@ -1,0 +1,608 @@
+
+> startup-nextjs-template@0.2.0 dev
+> next dev -p 3001 -p 3002
+
+"pnpm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3002
+
+ ✓ Ready in 2.1s
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled /page in 1921ms (519 modules)
+ ✓ Compiled /tienda-online/page in 572ms (523 modules)
+ ✓ Compiled /web-para-prepagas/page in 242ms (511 modules)
+ ✓ Compiled /web-para-pymes/page in 187ms (513 modules)
+ ✓ Compiled /web-para-hoteles/page in 236ms (515 modules)
+ ✓ Compiled /web-para-escuelas/page in 210ms (517 modules)
+ ✓ Compiled /web-para-barrios-cerrados/page in 237ms (517 modules)
+ ✓ Compiled /contacto/page in 201ms (517 modules)
+ ✓ Compiled in 354ms (262 modules)
+ ✓ Compiled in 661ms (530 modules)
+ ⨯ ./src/app/layout.tsx
+Error: 
+  [31mx[0m Unexpected token ```. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mC:\Users\ale\Downloads\pagina_web\src\app\layout.tsx[0m:84:1]
+ [2m84[0m |   },
+ [2m85[0m | }
+ [2m86[0m | 
+ [2m87[0m | export const viewport: Viewport = {`n  themeColor: "#0A0F1E",`n}`n`nexport default function RootLayout({ children }: { children: React.ReactNode }) {
+    : [31;1m                                   ^[0m
+ [2m88[0m |   return (
+ [2m89[0m |     <html lang="es" className={plusJakartaSans.variable}>
+ [2m89[0m |       <body className={`${plusJakartaSans.className} antialiased`}>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/layout.tsx
+ ⨯ ./src/app/layout.tsx
+Error: 
+  [31mx[0m Unexpected token ```. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mC:\Users\ale\Downloads\pagina_web\src\app\layout.tsx[0m:84:1]
+ [2m84[0m |   },
+ [2m85[0m | }
+ [2m86[0m | 
+ [2m87[0m | export const viewport: Viewport = {`n  themeColor: "#0A0F1E",`n}`n`nexport default function RootLayout({ children }: { children: React.ReactNode }) {
+    : [31;1m                                   ^[0m
+ [2m88[0m |   return (
+ [2m89[0m |     <html lang="es" className={plusJakartaSans.variable}>
+ [2m89[0m |       <body className={`${plusJakartaSans.className} antialiased`}>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/layout.tsx
+ ⨯ ./src/app/layout.tsx
+Error: 
+  [31mx[0m Unexpected token ```. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[[36;1;4mC:\Users\ale\Downloads\pagina_web\src\app\layout.tsx[0m:84:1]
+ [2m84[0m |   },
+ [2m85[0m | }
+ [2m86[0m | 
+ [2m87[0m | export const viewport: Viewport = {`n  themeColor: "#0A0F1E",`n}`n`nexport default function RootLayout({ children }: { children: React.ReactNode }) {
+    : [31;1m                                   ^[0m
+ [2m88[0m |   return (
+ [2m89[0m |     <html lang="es" className={plusJakartaSans.variable}>
+ [2m89[0m |       <body className={`${plusJakartaSans.className} antialiased`}>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/layout.tsx
+ ✓ Compiled in 631ms (558 modules)
+ ✓ Compiled in 526ms (558 modules)
+ ✓ Compiled /nosotros/page in 973ms (564 modules)
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\contacto\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\contacto\page.js:1:7360
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\contacto\page.js:1:7424)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\contacto\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/contacto'
+}
+ ✓ Compiled /not-found in 763ms (723 modules)
+ ✓ Compiled /web-para-pymes/page in 741ms (733 modules)
+ ✓ Compiled /web-para-prepagas/page in 273ms (361 modules)
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js:1:10855
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js:1:10923)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/web-para-escuelas'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-barrios-cerrados\page.js:1:11385
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-barrios-cerrados\page.js:1:11453)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/web-para-barrios-cerrados'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-hoteles\page.js:1:14642
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-hoteles\page.js:1:14710)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/web-para-hoteles'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15025
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15092)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15025
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15092)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15025
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15092)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15025
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15092)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './170.js'
+Require stack:
+- C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js
+- C:\Users\ale\Downloads\pagina_web\dist\server\app\web-para-escuelas\page.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\build\utils.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:54:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:198:28)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\ale\Downloads\pagina_web\dist\server\webpack-runtime.js:162:22)
+    at C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15025
+    at Object.<anonymous> (C:\Users\ale\Downloads\pagina_web\dist\server\app\page.js:1:15092)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require-hook.js:64:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:84
+    at async loadComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\ale\Downloads\pagina_web\node_modules\next\dist\server\next-server.js:439:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\webpack-runtime.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\dist\\server\\app\\web-para-escuelas\\page.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\ale\\Downloads\\pagina_web\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
