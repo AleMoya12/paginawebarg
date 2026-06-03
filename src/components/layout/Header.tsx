@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { WA } from "@/lib/whatsapp"
 
 const designLinks = [
   { label: "Web Premium", href: "/web-premium" },
@@ -50,7 +51,7 @@ export default function Header() {
         <Link href="/" className="shrink-0">
           <Image src="/images/logo6.png" alt="Página Web Arg" width={560} height={144} priority className="h-16 w-auto md:h-20" />
         </Link>
-        <nav className="flex w-full items-center rounded-full border border-[#1E293B] bg-[#0A0F1E] px-4 py-3 text-sm text-white md:px-6">
+        <nav className="ml-auto flex shrink-0 items-center rounded-full border border-[#1E293B] bg-[#0A0F1E] px-3 py-3 text-sm text-white md:flex-1 md:px-6">
 
         <div className="ml-8 hidden flex-1 items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -88,7 +89,7 @@ export default function Header() {
             Contacto
           </Link>
           <a
-            href="https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20una%20p%C3%A1gina%20web"
+            href={WA.general}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#0A0F1E] shadow-[0px_0px_20px_6px_rgba(255,255,255,0.15)] transition-all duration-300 hover:bg-slate-100 hover:shadow-[0px_0px_30px_10px_rgba(255,255,255,0.25)]"
@@ -122,7 +123,7 @@ export default function Header() {
           ))}
           <div className="h-px w-full bg-[#1E293B]" />
           <a
-            href="https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20una%20p%C3%A1gina%20web"
+            href={WA.general}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#0A0F1E] shadow-[0px_0px_20px_6px_rgba(255,255,255,0.15)]"

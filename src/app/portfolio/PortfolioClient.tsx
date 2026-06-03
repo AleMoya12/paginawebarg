@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { WA } from "@/lib/whatsapp"
 
 type Project = {
   src: string
@@ -85,7 +86,7 @@ export default function PortfolioClient() {
                 <p className="mb-4 text-sm text-[#94A3B8]">{project.desc}</p>
                 <div className="flex items-center justify-between">
                   <span className="rounded-md border border-[#3B82F6]/20 bg-[#3B82F6]/10 px-2 py-1 text-xs text-[#3B82F6]">{project.tech}</span>
-                  <a href="https://wa.me/5491164990312?text=Hola%2C%20vi%20el%20portfolio%20y%20quiero%20algo%20similar" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#F97316] transition-colors hover:text-[#EA580C]">Quiero algo similar →</a>
+                  <a href={WA.general} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#F97316] transition-colors hover:text-[#EA580C]">Quiero algo similar →</a>
                 </div>
               </div>
             </article>

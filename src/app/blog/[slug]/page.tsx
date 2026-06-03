@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { blogMetadata, blogPosts, getPostBySlug } from "@/lib/blog-posts"
+import { WA } from "@/lib/whatsapp"
 
 type Params = { slug: string }
 
@@ -59,7 +60,7 @@ export default function BlogPostPage({ params }: { params: Params }) {
           <h3 className="text-2xl font-bold text-[#F8FAFC]">¿Necesitás una web profesional</h3>
           <p className="mt-3 text-[#94A3B8]">Te ayudamos a convertir presencia digital en resultados reales.</p>
           <a
-            href="https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20una%20p%C3%A1gina%20web"
+            href={WA.general}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex rounded-lg bg-[#F97316] px-6 py-3 font-semibold text-white hover:bg-[#EA580C]"

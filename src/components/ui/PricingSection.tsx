@@ -1,5 +1,7 @@
 "use client"
 
+import { WA } from "@/lib/whatsapp"
+
 const plans = {
   monthly: [
     {
@@ -16,7 +18,7 @@ const plans = {
         "Dominio no incluido",
       ],
       cta: "Consultar por WhatsApp",
-      ctaLink: "https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20la%20Web%20Esencial",
+      ctaLink: WA.general,
       highlighted: false,
     },
     {
@@ -36,7 +38,7 @@ const plans = {
         "Dominio no incluido",
       ],
       cta: "Consultar por WhatsApp",
-      ctaLink: "https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20la%20Web%20Profesional",
+      ctaLink: WA.general,
       highlighted: true,
     },
     {
@@ -56,7 +58,7 @@ const plans = {
         "Dominio no incluido",
       ],
       cta: "Consultar por WhatsApp",
-      ctaLink: "https://wa.me/5491164990312?text=Hola%2C%20quiero%20consultar%20sobre%20la%20Web%20Premium",
+      ctaLink: WA.general,
       highlighted: false,
     },
   ],
