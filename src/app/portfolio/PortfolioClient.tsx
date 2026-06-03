@@ -72,7 +72,7 @@ export default function PortfolioClient() {
         <p className="mx-auto max-w-2xl text-lg text-[#94A3B8]">Diseños web reales para distintos rubros. Hacé clic en cada imagen para verla completa.</p>
       </section>
 
-      <section className="bg-[#0A0F1E] px-4 pb-20">
+      <section className="bg-[#0A0F1E] px-4 pb-20 pt-16 md:pt-20 lg:pt-24">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <article key={project.title} className={`group relative overflow-hidden rounded-2xl border border-[#1E293B] bg-[#1E293B] transition-all duration-300 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/10 ${i === 6 ? "lg:col-start-2" : ""}`}>
