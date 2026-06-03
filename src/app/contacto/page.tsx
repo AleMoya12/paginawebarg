@@ -32,7 +32,7 @@ const faqs = [
 export default function ContactoPage() {
   return (
     <>
-      <section className={`${HERO_BACKGROUNDS["/contacto"]} pt-24 pb-16 text-center md:pt-32`}>
+      <section className={`${HERO_BACKGROUNDS["/contacto"]} site-hero text-center`}>
         <div className="section-wrapper">
           <ActiveBadge text="Respondemos en el día" />
           <h1 className="mt-6 text-4xl font-bold md:text-6xl">Hablemos de tu proyecto</h1>

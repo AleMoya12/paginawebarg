@@ -47,7 +47,7 @@ const clients = [
 export default function NosotrosPage() {
   return (
     <>
-      <section className={`${HERO_BACKGROUNDS["/nosotros"]} pt-24 pb-16 md:pt-32`}>
+      <section className={`${HERO_BACKGROUNDS["/nosotros"]} site-hero`}>
         <div className="section-wrapper max-w-4xl">
           <ActiveBadge text="Equipo especializado en web, SEO y Ads" />
           <h1 className="mt-6 text-4xl font-bold md:text-6xl">Somos el equipo detrás de tu presencia digital</h1>

@@ -69,19 +69,19 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative flex flex-col items-center overflow-hidden bg-[#0A0F1E] px-4 pb-16 pt-24">
+      <section className="site-hero relative flex flex-col items-center overflow-hidden bg-[#0A0F1E] px-4 text-center">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(59,130,246,0.12),transparent_60%)]" />
-        <div className="relative z-10 mb-8">
+        <div className="relative z-10 mb-6">
           <ActiveBadge text="Respondemos en el día" />
         </div>
-        <h1 className="relative z-10 mb-6 max-w-4xl text-center text-4xl font-bold leading-tight text-[#F8FAFC] md:text-6xl lg:text-[68px]">
+        <h1 className="relative z-10 mb-5 max-w-4xl text-center text-4xl font-bold leading-tight text-[#F8FAFC] md:text-5xl lg:text-6xl">
           Tu página web profesional,{" "}
           <span className="bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">lista para conseguir clientes</span>
         </h1>
-        <p className="relative z-10 mb-10 max-w-2xl text-center text-base leading-relaxed text-[#94A3B8] md:text-lg">
+        <p className="relative z-10 mb-8 max-w-2xl text-center text-base leading-relaxed text-[#94A3B8] md:text-lg">
           Diseñamos y desarrollamos sitios web para pymes, emprendedores y profesionales. Rápidos, modernos y optimizados para que Google te encuentre.
         </p>
-        <div className="relative z-10 mb-14 flex flex-col gap-4 sm:flex-row">
+        <div className="relative z-10 mb-10 flex flex-col gap-4 sm:flex-row">
           <a href={WA.general} target="_blank" rel="noopener noreferrer" className="btn-primary">
             Consultar por WhatsApp
           </a>
@@ -89,7 +89,7 @@ export default function HomePage() {
             Ver nuestros diseños 
           </a>
         </div>
-        <div className="mb-14 h-px w-full max-w-2xl bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent" />
+        <div className="mb-10 h-px w-full max-w-2xl bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent" />
         <div className="hidden w-full max-w-3xl grid-cols-2 gap-8 text-center md:grid md:grid-cols-3">
           <div><div className="mb-1 text-2xl font-bold text-[#F8FAFC] md:text-3xl">100+</div><div className="text-xs text-[#94A3B8]">sitios desarrollados</div></div>
           <div><div className="mb-1 text-2xl font-bold text-[#F8FAFC] md:text-3xl">En el día</div><div className="text-xs text-[#94A3B8]">tiempo de respuesta</div></div>

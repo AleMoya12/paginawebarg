@@ -76,7 +76,7 @@ export default function WebPremiumPage() {
 }
 
 function Hero({ badgeText, title, text, href }: { badgeText: string; title: string; text: string; href: string }) {
-  return <section className={`${HERO_BACKGROUNDS["/web-premium"]} py-24 text-center`}><div className="section-wrapper"><ActiveBadge text={badgeText} /><h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">{title}</h1><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary">{text}</p><a href={href} target="_blank" rel="noopener noreferrer" className="btn-primary mt-10">Consultar por WhatsApp</a></div></section>
+  return <section className={`${HERO_BACKGROUNDS["/web-premium"]} site-hero text-center`}><div className="section-wrapper"><ActiveBadge text={badgeText} /><h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">{title}</h1><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary">{text}</p><a href={href} target="_blank" rel="noopener noreferrer" className="btn-primary mt-10">Consultar por WhatsApp</a></div></section>
 }
 function Section({ title, intro, cards, alt = false }: { title: string; intro?: string; cards: string[][]; alt?: boolean }) {
   return <section className={`${alt ? "bg-navy-light" : "bg-navy"} py-20`}><div className="section-wrapper"><h2 className="text-center text-3xl font-bold md:text-5xl">{title}</h2>{intro && <p className="mx-auto mt-5 max-w-3xl text-center leading-7 text-text-secondary">{intro}</p>}<div className="mt-12 grid gap-6 md:grid-cols-3">{cards.map(([heading, text]) => <article key={heading} className="card"><h3 className="text-xl font-bold">{heading}</h3><p className="mt-3 leading-7 text-text-secondary">{text}</p></article>)}</div></div></section>

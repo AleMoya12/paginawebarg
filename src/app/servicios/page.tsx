@@ -91,7 +91,7 @@ const faqs = [
 export default function ServiciosPage() {
   return (
     <>
-      <section className={`${HERO_BACKGROUNDS["/servicios"]} pt-24 pb-16 text-center md:pt-32`}>
+      <section className={`${HERO_BACKGROUNDS["/servicios"]} site-hero text-center`}>
         <div className="section-wrapper">
           <ActiveBadge text="Presupuesto sin compromiso" />
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Servicios digitales para hacer crecer tu negocio</h1>

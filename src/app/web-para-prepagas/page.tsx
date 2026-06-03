@@ -58,7 +58,7 @@ const faqs = [
 export default function WebParaPrepagasPage() {
   return (
     <>
-      <section className={`${HERO_BACKGROUNDS["/web-para-prepagas"]} py-24 text-center`}>
+      <section className={`${HERO_BACKGROUNDS["/web-para-prepagas"]} site-hero text-center`}>
         <div className="section-wrapper">
           <ActiveBadge text="Salud y prepagas" />
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">La web que necesita tu prepaga para atender mejor a sus afiliados</h1>

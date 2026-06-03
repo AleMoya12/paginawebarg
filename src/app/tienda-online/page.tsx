@@ -40,7 +40,7 @@ const faqs = [
 export default function TiendaOnlinePage() {
   return (
     <>
-      <section className={`${HERO_BACKGROUNDS["/tienda-online"]} py-24 text-center`}>
+      <section className={`${HERO_BACKGROUNDS["/tienda-online"]} site-hero text-center`}>
         <div className="section-wrapper">
           <ActiveBadge text="Vendé las 24 horas" />
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Vendé tus productos las 24 horas, sin intermediarios</h1>
