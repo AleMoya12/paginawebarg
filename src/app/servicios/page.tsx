@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { WA } from "@/lib/whatsapp"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import JsonLd from "@/components/seo/JsonLd"
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/structured-data"
 import TechMarque from "@/components/ui/TechMarquee"
@@ -90,7 +91,7 @@ const faqs = [
 export default function ServiciosPage() {
   return (
     <>
-      <section className="bg-navy pt-24 pb-16 text-center md:pt-32">
+      <section className={`${HERO_BACKGROUNDS["/servicios"]} pt-24 pb-16 text-center md:pt-32`}>
         <div className="section-wrapper">
           <ActiveBadge text="Presupuesto sin compromiso" />
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Servicios digitales para hacer crecer tu negocio</h1>

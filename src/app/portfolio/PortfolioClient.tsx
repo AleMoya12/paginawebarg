@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import { WA } from "@/lib/whatsapp"
 
 type Project = {
@@ -65,7 +66,7 @@ export default function PortfolioClient() {
         </div>
       )}
 
-      <section className="bg-[#0A0F1E] px-4 py-20 text-center">
+      <section className={`${HERO_BACKGROUNDS["/portfolio"]} px-4 py-20 text-center`}>
         <ActiveBadge text="100+ proyectos desarrollados" />
         <h1 className="mb-4 mt-6 text-4xl font-bold text-[#F8FAFC] md:text-5xl">Trabajos que hablan por sí solos</h1>
         <p className="mx-auto max-w-2xl text-lg text-[#94A3B8]">Diseños web reales para distintos rubros. Hacé clic en cada imagen para verla completa.</p>

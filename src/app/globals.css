@@ -73,6 +73,127 @@ button {
   .section-wrapper {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
+
+  .hero-bg {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+      linear-gradient(135deg, var(--hero-base) 0%, rgba(var(--hero-secondary-rgb), 0.82) 58%, var(--hero-base) 100%);
+  }
+
+  .hero-bg::before,
+  .hero-bg::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    pointer-events: none;
+  }
+
+  .hero-bg::before {
+    background:
+      radial-gradient(circle at 18% 16%, rgba(var(--hero-accent-rgb), 0.2), transparent 34%),
+      radial-gradient(circle at 88% 18%, rgba(var(--hero-secondary-rgb), 0.24), transparent 40%),
+      linear-gradient(180deg, rgba(2, 6, 23, 0.1), rgba(2, 6, 23, 0.44));
+    opacity: 0.94;
+  }
+
+  .hero-bg::after {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 46px 46px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), transparent 72%);
+    opacity: 0.34;
+  }
+
+  .hero-bg > .section-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-bg .text-text-secondary {
+    color: rgba(226, 232, 240, 0.8);
+  }
+
+  .hero-bg-design-1 {
+    --hero-base: #0f172a;
+    --hero-secondary-rgb: 30, 58, 138;
+    --hero-accent-rgb: 59, 130, 246;
+  }
+
+  .hero-bg-design-2 {
+    --hero-base: #0b1f17;
+    --hero-secondary-rgb: 20, 83, 45;
+    --hero-accent-rgb: 34, 197, 94;
+  }
+
+  .hero-bg-design-3 {
+    --hero-base: #111827;
+    --hero-secondary-rgb: 55, 65, 81;
+    --hero-accent-rgb: 156, 163, 175;
+  }
+
+  .hero-bg-design-4 {
+    --hero-base: #1e1b4b;
+    --hero-secondary-rgb: 76, 29, 149;
+    --hero-accent-rgb: 139, 92, 246;
+  }
+
+  .hero-bg-design-5 {
+    --hero-base: #082f49;
+    --hero-secondary-rgb: 15, 118, 110;
+    --hero-accent-rgb: 6, 182, 212;
+  }
+
+  .hero-bg-design-6 {
+    --hero-base: #3f0d12;
+    --hero-secondary-rgb: 127, 29, 29;
+    --hero-accent-rgb: 220, 38, 38;
+  }
+
+  .hero-bg-design-7 {
+    --hero-base: #0a0a0a;
+    --hero-secondary-rgb: 38, 38, 38;
+    --hero-accent-rgb: 115, 115, 115;
+  }
+
+  .hero-bg-design-8 {
+    --hero-base: #052e2b;
+    --hero-secondary-rgb: 17, 94, 89;
+    --hero-accent-rgb: 20, 184, 166;
+  }
+
+  .hero-bg-design-9 {
+    --hero-base: #172554;
+    --hero-secondary-rgb: 29, 78, 216;
+    --hero-accent-rgb: 96, 165, 250;
+  }
+
+  .hero-bg-portfolio {
+    --hero-base: #1c1917;
+    --hero-secondary-rgb: 120, 53, 15;
+    --hero-accent-rgb: 217, 119, 6;
+  }
+
+  .hero-bg-servicios {
+    --hero-base: #020617;
+    --hero-secondary-rgb: 30, 64, 175;
+    --hero-accent-rgb: 56, 189, 248;
+  }
+
+  .hero-bg-nosotros {
+    --hero-base: #064e3b;
+    --hero-secondary-rgb: 6, 95, 70;
+    --hero-accent-rgb: 52, 211, 153;
+  }
+
+  .hero-bg-contacto {
+    --hero-base: #2e1065;
+    --hero-secondary-rgb: 88, 28, 135;
+    --hero-accent-rgb: 192, 132, 252;
+  }
 }
 
 html {

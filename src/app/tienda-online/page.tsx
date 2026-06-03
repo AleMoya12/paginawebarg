@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { WhatsAppLink } from "@/lib/whatsapp"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import JsonLd from "@/components/seo/JsonLd"
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/structured-data"
 import { CheckItem } from "@/components/ui/CheckItem"
@@ -39,7 +40,7 @@ const faqs = [
 export default function TiendaOnlinePage() {
   return (
     <>
-      <section className="bg-navy py-24 text-center">
+      <section className={`${HERO_BACKGROUNDS["/tienda-online"]} py-24 text-center`}>
         <div className="section-wrapper">
           <ActiveBadge text="Vendé las 24 horas" />
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Vendé tus productos las 24 horas, sin intermediarios</h1>

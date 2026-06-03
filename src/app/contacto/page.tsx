@@ -3,6 +3,7 @@ import { CONTACT } from "@/constants/contact"
 import { WA } from "@/lib/whatsapp"
 import { WhatsAppIcon } from "@/components/ui/Button"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import JsonLd from "@/components/seo/JsonLd"
 import { breadcrumbSchema, faqSchema } from "@/lib/structured-data"
 
@@ -31,7 +32,7 @@ const faqs = [
 export default function ContactoPage() {
   return (
     <>
-      <section className="bg-navy pt-24 pb-16 text-center md:pt-32">
+      <section className={`${HERO_BACKGROUNDS["/contacto"]} pt-24 pb-16 text-center md:pt-32`}>
         <div className="section-wrapper">
           <ActiveBadge text="Respondemos en el día" />
           <h1 className="mt-6 text-4xl font-bold md:text-6xl">Hablemos de tu proyecto</h1>

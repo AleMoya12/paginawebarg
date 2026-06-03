@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { WA } from "@/lib/whatsapp"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import TechMarque from "@/components/ui/TechMarquee"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import JsonLd from "@/components/seo/JsonLd"
@@ -46,7 +47,7 @@ const clients = [
 export default function NosotrosPage() {
   return (
     <>
-      <section className="bg-navy pt-24 pb-16 md:pt-32">
+      <section className={`${HERO_BACKGROUNDS["/nosotros"]} pt-24 pb-16 md:pt-32`}>
         <div className="section-wrapper max-w-4xl">
           <ActiveBadge text="Equipo especializado en web, SEO y Ads" />
           <h1 className="mt-6 text-4xl font-bold md:text-6xl">Somos el equipo detrás de tu presencia digital</h1>

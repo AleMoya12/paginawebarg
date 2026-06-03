@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { WhatsAppLink } from "@/lib/whatsapp"
 import ActiveBadge from "@/components/ui/ActiveBadge"
+import { HERO_BACKGROUNDS } from "@/lib/hero-backgrounds"
 import JsonLd from "@/components/seo/JsonLd"
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/structured-data"
 import { CheckItem } from "@/components/ui/CheckItem"
@@ -52,7 +53,7 @@ const faqs = [
 export default function WebParaPymesPage() {
   return (
     <>
-      <section className="bg-navy py-24 text-center"><div className="section-wrapper"><ActiveBadge text="Para pequeñas y medianas empresas" /><h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Tu empresa merece una web que trabaje para vos</h1><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary">Diseñamos y desarrollamos páginas web para pequeñas y medianas empresas. Profesionales, rápidas y optimizadas para que tus clientes te encuentren en Google.</p><a href={wa} target="_blank" rel="noopener noreferrer" className="btn-primary mt-10">Consultar por WhatsApp</a></div></section>
+      <section className={`${HERO_BACKGROUNDS["/web-para-pymes"]} py-24 text-center`}><div className="section-wrapper"><ActiveBadge text="Para pequeñas y medianas empresas" /><h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-6xl">Tu empresa merece una web que trabaje para vos</h1><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-text-secondary">Diseñamos y desarrollamos páginas web para pequeñas y medianas empresas. Profesionales, rápidas y optimizadas para que tus clientes te encuentren en Google.</p><a href={wa} target="_blank" rel="noopener noreferrer" className="btn-primary mt-10">Consultar por WhatsApp</a></div></section>
 
       <section className="bg-navy-light py-20"><div className="section-wrapper"><h2 className="text-center text-3xl font-bold md:text-5xl">Para qué tipo de empresa</h2><div className="mx-auto mt-10 flex max-w-5xl flex-wrap justify-center gap-3">{segments.map((segment) => <span key={segment} className="rounded-full bg-slate-card px-4 py-2 text-sm text-text-secondary">{segment}</span>)}</div></div></section>
 

@@ -1,0 +1,15 @@
+export const HERO_BACKGROUNDS = {
+  "/web-para-pymes": "hero-bg hero-bg-design-1",
+  "/tienda-online": "hero-bg hero-bg-design-2",
+  "/web-premium": "hero-bg hero-bg-design-3",
+  "/web-para-profesionales": "hero-bg hero-bg-design-4",
+  "/web-autoadministrable": "hero-bg hero-bg-design-5",
+  "/web-para-prepagas": "hero-bg hero-bg-design-6",
+  "/web-para-hoteles": "hero-bg hero-bg-design-7",
+  "/web-para-escuelas": "hero-bg hero-bg-design-8",
+  "/web-para-barrios-cerrados": "hero-bg hero-bg-design-9",
+  "/portfolio": "hero-bg hero-bg-portfolio",
+  "/servicios": "hero-bg hero-bg-servicios",
+  "/nosotros": "hero-bg hero-bg-nosotros",
+  "/contacto": "hero-bg hero-bg-contacto",
+} as const
