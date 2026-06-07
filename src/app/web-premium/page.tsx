@@ -91,7 +91,7 @@ function FAQ({ items }: { items: string[][] }) {
   return <section className="bg-navy-light py-20"><div className="section-wrapper max-w-4xl"><h2 className="text-center text-3xl font-bold md:text-5xl">Preguntas frecuentes</h2><div className="mt-10 divide-y divide-slate-card">{items.map(([q, a]) => <details key={q} className="py-5"><summary className="cursor-pointer font-semibold">{q}</summary><p className="mt-3 leading-7 text-text-secondary">{a}</p></details>)}</div></div></section>
 }
 function CTA({ title, text, href }: { title: string; text: string; href: string }) {
-  return <section className="bg-brand-blue py-20 text-center"><h2 className="text-3xl font-bold text-white md:text-5xl">{title}</h2><p className="mt-5 text-white/90">{text}</p><a href={href} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A5F]">Consultar por WhatsApp</a></section>
+  return <section className="bg-graphite py-24 text-center"><h2 className="text-3xl font-bold text-white md:text-5xl">{title}</h2><p className="mt-5 text-cream/70">{text}</p><a href={href} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">Consultar por WhatsApp</a></section>
 }
 
 

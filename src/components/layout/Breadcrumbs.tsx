@@ -37,21 +37,21 @@ export default function Breadcrumbs() {
   if (parts.length === 0) return null
 
   return (
-    <nav aria-label="Breadcrumb" className="border-b border-[#1E293B] bg-[#0A0F1E] px-4 py-3">
-      <ol className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-2 text-sm text-[#94A3B8]">
+    <nav aria-label="Breadcrumb" className="border-b border-line bg-cream px-4 py-3">
+      <ol className="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-2 px-2 text-sm text-text-secondary sm:px-4 lg:px-6">
         <li>
-          <Link href="/" className="hover:text-[#F8FAFC]">Inicio</Link>
+          <Link href="/" className="transition-colors hover:text-orange">Inicio</Link>
         </li>
         {parts.map((part, index) => {
           const href = `/${parts.slice(0, index + 1).join("/")}`
           const last = index === parts.length - 1
           return (
             <li key={href} className="flex items-center gap-2">
-              <span aria-hidden="true">/</span>
+              <span aria-hidden="true" className="text-graphite/30">/</span>
               {last ? (
-                <span aria-current="page" className="text-[#F8FAFC]">{segmentLabel(part)}</span>
+                <span aria-current="page" className="font-medium text-graphite">{segmentLabel(part)}</span>
               ) : (
-                <Link href={href} className="hover:text-[#F8FAFC]">{segmentLabel(part)}</Link>
+                <Link href={href} className="transition-colors hover:text-orange">{segmentLabel(part)}</Link>
               )}
             </li>
           )

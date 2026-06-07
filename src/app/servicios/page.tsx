@@ -20,7 +20,7 @@ const services = [
     title: "Diseño Web Profesional",
     description: "Creamos tu página web desde cero. Diseño moderno, adaptado a celulares y optimizado para que Google te encuentre. Trabajamos en código y en WordPress según tus necesidades.",
     href: "/web-premium",
-    color: "#3B82F6",
+    color: "#E8732A",
     icon: "screen",
   },
   {
@@ -34,14 +34,14 @@ const services = [
     title: "Google Ads",
     description: "Gestionamos tus campañas de publicidad en Google para llegar a clientes que ya están buscando tu servicio. Resultados medibles desde el primer día.",
     href: "/publicidad",
-    color: "#F97316",
+    color: "#E8732A",
     icon: "megaphone",
   },
   {
     title: "Tienda Online",
     description: "Creamos tu tienda virtual para vender las 24 horas. Catálogo de productos, carrito de compras, pasarela de pago y gestión de pedidos.",
     href: "/tienda-online",
-    color: "#3B82F6",
+    color: "#E8732A",
     icon: "cart",
   },
   {
@@ -103,26 +103,26 @@ export default function ServiciosPage() {
       <section className="bg-navy-light py-20">
         <div className="section-wrapper grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <article key={service.title} className="rounded-xl border border-slate-card bg-slate-card p-8">
+            <article key={service.title} className="card reveal">
               <ServiceIcon name={service.icon} color={service.color} />
               <h2 className="mt-6 text-2xl font-bold">{service.title}</h2>
               <p className="mt-4 leading-7 text-text-secondary">{service.description}</p>
               {service.href.startsWith("https://") ? (
-                <a href={service.href} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex font-semibold text-brand-orange">Consultar →</a>
+                <a href={service.href} target="_blank" rel="noopener noreferrer" className="group mt-6 inline-flex items-center gap-1.5 font-semibold text-orange">Consultar <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a>
               ) : (
-                <Link href={service.href} className="mt-6 inline-flex font-semibold text-brand-orange">Ver más →</Link>
+                <Link href={service.href} className="group mt-6 inline-flex items-center gap-1.5 font-semibold text-orange">Ver más <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></Link>
               )}
             </article>
           ))}
         </div>
       </section>
 
-      <section className="hidden bg-navy py-20 md:block">
-        <div className="section-wrapper grid gap-6 text-center sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map(([number, text]) => (
-            <div key={text}>
-              <p className="text-6xl font-extrabold text-brand-blue">{number}</p>
-              <p className="mt-2 text-sm text-text-secondary">{text}</p>
+      <section className="hidden bg-graphite py-24 md:block">
+        <div className="section-wrapper grid gap-10 text-center sm:grid-cols-2 lg:grid-cols-4">
+          {stats.map(([number, text], i) => (
+            <div key={text} className="reveal">
+              <p className={`font-display text-5xl font-bold lg:text-6xl ${i % 2 === 1 ? "text-gold" : "text-orange"}`}>{number}</p>
+              <p className="mt-3 text-sm text-cream/60">{text}</p>
             </div>
           ))}
         </div>
@@ -161,11 +161,11 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue py-20 text-center">
+      <section className="bg-graphite py-24 text-center">
         <div className="section-wrapper">
           <h2 className="text-3xl font-bold text-white md:text-5xl">Empezá hoy con tu página web</h2>
-          <p className="mt-5 text-white/90">Contanos tu proyecto y te respondemos en el día.</p>
-          <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-brand-blue">Escribinos por WhatsApp</a>
+          <p className="mt-5 text-cream/70">Contanos tu proyecto y te respondemos en el día.</p>
+          <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">Escribinos por WhatsApp</a>
         </div>
       </section>
           
@@ -190,7 +190,7 @@ function ServiceIcon({ name, color }: { name: string; color: string }) {
   if (name === "phone") svg = <svg {...props}><rect x="7" y="2" width="10" height="20" rx="2.5" /><path d="M11 18h2" /></svg>
 
   return (
-    <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+    <span className="flex h-14 w-14 items-center justify-center rounded-[4px] border border-line bg-cream">
       {svg}
     </span>
   )

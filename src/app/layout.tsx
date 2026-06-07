@@ -1,15 +1,23 @@
 ﻿import type { Metadata } from "next"
-import { Plus_Jakarta_Sans } from "next/font/google"
+import { Space_Grotesk, DM_Sans } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import WhatsAppButton from "@/components/layout/WhatsAppButton"
 import TopBanner from "@/components/ui/TopBanner"
+import ScrollReveal from "@/components/ui/ScrollReveal"
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta",
+  weight: ["500", "600", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+})
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
   display: "swap",
 })
 
@@ -73,10 +81,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/favicon3.png", type: "image/png", sizes: "32x32" },
-      { url: "/images/favicon3.png", type: "image/png", sizes: "16x16" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "16x16" },
     ],
-    apple: [{ url: "/images/favicon3.png", sizes: "180x180" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
     shortcut: "/favicon.ico",
   },
   verification: {
@@ -85,18 +93,19 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: "#0A0F1E",
+  themeColor: "#101828",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={plusJakartaSans.variable}>
-      <body className={`${plusJakartaSans.className} antialiased`}>
+    <html lang="es" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
+      <body className={`${dmSans.className} antialiased`}>
         <TopBanner />
         <Header />
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+        <ScrollReveal />
       </body>
     </html>
   )

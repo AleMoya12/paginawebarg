@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 }
 
 const specialties = [
-  ["Desarrollo Web", "Construimos sitios web en código desde cero y también en WordPress para proyectos que requieren gestión de contenido sencilla.", "#3B82F6"],
+  ["Desarrollo Web", "Construimos sitios web en código desde cero y también en WordPress para proyectos que requieren gestión de contenido sencilla.", "#E8732A"],
   ["SEO y Posicionamiento", "Optimizamos tu sitio para aparecer en los primeros resultados de Google con auditorías técnicas, keywords y contenido.", "#22C55E"],
-  ["Google Ads", "Gestionamos campañas de publicidad paga para que tu negocio aparezca cuando alguien busca lo que ofrecés.", "#F97316"],
+  ["Google Ads", "Gestionamos campañas de publicidad paga para que tu negocio aparezca cuando alguien busca lo que ofrecés.", "#E8732A"],
 ]
 
 const steps = [
@@ -27,11 +27,11 @@ const steps = [
 ]
 
 const certifications = [
-  ["Google", "Google Developer (activo)", "Certificación activa de Google en desarrollo web, herramientas y ecosistema de Google.", "#3B82F6"],
-  ["Google", "Google Ads - Búsqueda", "Certificación en campañas de búsqueda, estrategia de puja y optimización de anuncios.", "#F97316"],
+  ["Google", "Google Developer (activo)", "Certificación activa de Google en desarrollo web, herramientas y ecosistema de Google.", "#E8732A"],
+  ["Google", "Google Ads - Búsqueda", "Certificación en campañas de búsqueda, estrategia de puja y optimización de anuncios.", "#E8732A"],
   ["SEMrush Academy", "SEO Fundamentals", "Fundamentos de posicionamiento orgánico, keywords y optimización on-page y off-page.", "#22C55E"],
   ["SEMrush Academy", "AI Visibility Essentials / GEO", "Optimización de contenido para visibilidad en respuestas de inteligencia artificial.", "#22C55E"],
-  ["Schema App", "Schema Markup", "Implementación de datos estructurados JSON-LD para rich snippets y mejora de CTR.", "#3B82F6"],
+  ["Schema App", "Schema Markup", "Implementación de datos estructurados JSON-LD para rich snippets y mejora de CTR.", "#E8732A"],
   ["Simplilearn", "Introduction to SEO", "Estrategia SEO integral, arquitectura de sitios y optimización técnica.", "#94A3B8"],
 ]
 
@@ -102,8 +102,8 @@ export default function NosotrosPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map(([number, title, text]) => (
-              <article key={number} className="card">
-                <p className="text-4xl font-extrabold text-brand-blue">{number}</p>
+              <article key={number} className="card reveal">
+                <p className="font-display text-4xl font-bold text-orange">{number}</p>
                 <h3 className="mt-4 text-xl font-bold">{title}</h3>
                 <p className="mt-3 text-sm leading-6 text-text-secondary">{text}</p>
               </article>
@@ -129,16 +129,17 @@ export default function NosotrosPage() {
 
       <TechMarque />
 
-      <section className="bg-[#111827] px-4 py-20">
+      <section className="bg-white px-4 py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-4 text-center text-3xl font-bold text-[#F8FAFC]">Nivel de expertise</h2>
-          <p className="mb-12 text-center text-[#94A3B8]">Las áreas en las que más nos especializamos.</p>
+          <div className="mx-auto mb-5 h-px w-16 bg-gold" />
+          <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">Nivel de expertise</h2>
+          <p className="mb-12 text-center text-text-secondary">Las áreas en las que más nos especializamos.</p>
           <div className="space-y-6">
-            <ProgressBar label="Desarrollo Web (Next.js / React)" percent={95} color="#3B82F6" />
-            <ProgressBar label="WordPress & WooCommerce" percent={90} color="#3B82F6" />
+            <ProgressBar label="Desarrollo Web (Next.js / React)" percent={95} color="#E8732A" />
+            <ProgressBar label="WordPress & WooCommerce" percent={90} color="#E8732A" />
             <ProgressBar label="SEO Técnico & On-Page" percent={88} color="#22C55E" />
-            <ProgressBar label="Google Ads (Search & Display)" percent={82} color="#F97316" />
-            <ProgressBar label="Integración CRM & WhatsApp" percent={78} color="#F97316" />
+            <ProgressBar label="Google Ads (Search & Display)" percent={82} color="#E8732A" />
+            <ProgressBar label="Integración CRM & WhatsApp" percent={78} color="#E8732A" />
             <ProgressBar label="UX/UI & Diseño Visual" percent={85} color="#22C55E" />
           </div>
         </div>
@@ -156,10 +157,10 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue py-20 text-center">
+      <section className="bg-graphite py-24 text-center">
         <h2 className="text-3xl font-bold text-white md:text-5xl">Trabajemos juntos</h2>
-        <p className="mt-5 text-white/90">Contanos tu proyecto y te respondemos en el día.</p>
-        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A5F]">
+        <p className="mt-5 text-cream/70">Contanos tu proyecto y te respondemos en el día.</p>
+        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">
           Escribinos por WhatsApp
         </a>
       </section>

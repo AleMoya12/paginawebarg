@@ -57,36 +57,41 @@ export default function PortfolioClient() {
             <div className="relative w-full" style={{ maxHeight: "85vh" }}>
               <Image src={selected.src} alt={selected.alt} width={1200} height={800} className="h-auto max-h-[85vh] w-auto max-w-full rounded-xl object-contain shadow-2xl" priority />
               <div className="absolute bottom-0 left-0 right-0 rounded-b-xl bg-gradient-to-t from-black/80 to-transparent px-6 py-4">
-                <span className="mr-3 rounded-full bg-[#1E293B] px-3 py-1 text-xs text-[#94A3B8]">{selected.badge}</span>
-                <span className="font-semibold text-[#F8FAFC]">{selected.title}</span>
+                <span className="mr-3 rounded-full bg-[#2A3346] px-3 py-1 text-xs text-[#94A3B8]">{selected.badge}</span>
+                <span className="font-semibold text-[#F5F5F3]">{selected.title}</span>
               </div>
             </div>
           </div>
         </div>
       )}
 
-      <section className={`${HERO_BACKGROUNDS["/portfolio"]} site-hero flex-col px-4 text-center`}>
-        <ActiveBadge text="100+ proyectos desarrollados" />
-        <h1 className="mb-4 mt-6 text-4xl font-bold text-[#F8FAFC] md:text-5xl">Trabajos que hablan por sí solos</h1>
-        <p className="mx-auto max-w-2xl text-lg text-[#94A3B8]">Diseños web reales para distintos rubros. Hacé clic en cada imagen para verla completa.</p>
+      <section className={`${HERO_BACKGROUNDS["/portfolio"]} site-hero`}>
+        <div className="section-wrapper">
+          <div className="max-w-3xl">
+            <ActiveBadge text="100+ proyectos desarrollados" />
+            <div className="rule-gold mb-6 mt-6" />
+            <h1 className="text-4xl font-bold md:text-6xl">Trabajos que hablan por sí solos</h1>
+            <p className="mt-5 max-w-2xl text-lg text-text-secondary">Diseños web reales para distintos rubros. Hacé clic en cada imagen para verla completa.</p>
+          </div>
+        </div>
       </section>
 
-      <section className="bg-[#0A0F1E] px-4 pb-20 pt-10 md:pt-12 lg:pt-16">
+      <section className="bg-cream px-4 pb-24 pt-10 md:pt-12 lg:pt-16">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <article key={project.title} className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#1E293B] bg-[#1E293B] transition-all duration-300 hover:border-[#EA580C] hover:shadow-2xl hover:shadow-orange-500/10">
-              <div className="relative aspect-[16/10] cursor-zoom-in overflow-hidden" onClick={() => setSelected(project)}>
-                <Image src={project.src} alt={project.alt} fill className="bg-[#111827] object-contain transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" onError={(e) => { e.currentTarget.style.display = "none" }} />
-                <div className="absolute inset-0 bg-[#EA580C]/0 transition-all duration-300 group-hover:bg-[#EA580C]/10" />
-                <span className="absolute left-3 top-3 rounded-full border border-[#1E293B] bg-[#0A0F1E]/80 px-3 py-1 text-xs font-semibold text-[#F8FAFC] backdrop-blur-sm">{project.badge}</span>
+            <article key={project.title} className="reveal group relative flex h-full flex-col overflow-hidden rounded-[4px] border border-line bg-white transition-all duration-300 hover:-translate-y-1 hover:border-orange/50 hover:shadow-[0_22px_50px_-26px_rgba(16,24,40,0.45)]">
+              <div className="relative aspect-[16/10] cursor-zoom-in overflow-hidden bg-cream-dark" onClick={() => setSelected(project)}>
+                <Image src={project.src} alt={project.alt} fill className="object-contain transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" onError={(e) => { e.currentTarget.style.display = "none" }} />
+                <div className="absolute inset-0 bg-orange/0 transition-all duration-300 group-hover:bg-orange/5" />
+                <span className="absolute left-3 top-3 rounded-full border border-line bg-white/85 px-3 py-1 text-xs font-semibold text-graphite backdrop-blur-sm">{project.badge}</span>
               </div>
 
               <div className="flex flex-1 flex-col p-5">
-                <h2 className="mb-1 text-lg font-semibold text-[#F8FAFC]">{project.title}</h2>
-                <p className="mb-5 min-h-[40px] text-sm text-[#94A3B8]">{project.desc}</p>
+                <h2 className="mb-1 text-lg font-bold">{project.title}</h2>
+                <p className="mb-5 min-h-[40px] text-sm text-text-secondary">{project.desc}</p>
                 <div className="mt-auto flex items-center justify-between gap-4">
-                  <span className="rounded-md border border-[#EA580C]/20 bg-[#EA580C]/10 px-2 py-1 text-xs text-[#FB923C]">{project.tech}</span>
-                  <a href={WA.general} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#F97316] transition-colors hover:text-[#EA580C]">Quiero algo similar →</a>
+                  <span className="rounded-[4px] border border-orange/20 bg-orange/10 px-2 py-1 text-xs font-medium text-orange">{project.tech}</span>
+                  <a href={WA.general} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-orange transition-colors hover:text-orange-hover">Quiero algo similar →</a>
                 </div>
               </div>
             </article>

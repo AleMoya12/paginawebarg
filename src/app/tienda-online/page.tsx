@@ -53,7 +53,7 @@ export default function TiendaOnlinePage() {
       <Cards title="Todo lo que necesita una tienda online real" items={features} alt />
       <section className="bg-navy py-20"><div className="section-wrapper"><h2 className="text-center text-3xl font-bold md:text-5xl">Proceso</h2><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">{steps.map((s, i) => <article key={s} className="card"><p className="text-4xl font-bold text-brand-blue">{String(i + 1).padStart(2, "0")}</p><h3 className="mt-4 text-xl font-bold">{s}</h3></article>)}</div></div></section>
       <FAQ items={faqs} />
-      <section className="bg-brand-blue py-20 text-center"><h2 className="text-3xl font-bold text-white md:text-5xl">Tu tienda online, lista para vender</h2><p className="mt-5 text-white/90">Primera consulta sin compromiso.</p><a href={wa} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A5F]">Consultar por WhatsApp</a></section>
+      <section className="bg-graphite py-24 text-center"><h2 className="text-3xl font-bold text-white md:text-5xl">Tu tienda online, lista para vender</h2><p className="mt-5 text-cream/70">Primera consulta sin compromiso.</p><a href={wa} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">Consultar por WhatsApp</a></section>
           
             <JsonLd data={serviceSchema("Tienda Online Profesional", "Creamos tu tienda online con catálogo, carrito de compras y pasarela de pago para vender desde el primer día.", "/tienda-online")} />
       <JsonLd data={faqSchema(faqs)} />

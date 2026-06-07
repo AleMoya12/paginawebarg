@@ -86,10 +86,10 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue py-20 text-center">
+      <section className="bg-graphite py-24 text-center">
         <h2 className="text-3xl font-bold text-white md:text-5xl">Empezá ahora</h2>
-        <p className="mt-5 text-white/90">La primera consulta no tiene ningún costo.</p>
-        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A5F]">
+        <p className="mt-5 text-cream/70">La primera consulta no tiene ningún costo.</p>
+        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">
           Escribinos por WhatsApp
         </a>
       </section>

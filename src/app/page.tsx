@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 }
 
 const valueProps = [
-  ["Google te encuentra", "Una web bien construida aparece en los resultados de búsqueda. Tus clientes te encuentran cuando buscan lo que ofrecés.", "search", "#3B82F6"],
-  ["Funciona en cualquier dispositivo", "El 70% de las visitas vienen desde el celular. Tu web se adapta perfectamente a teléfonos, tablets y computadoras.", "phone", "#F97316"],
+  ["Google te encuentra", "Una web bien construida aparece en los resultados de búsqueda. Tus clientes te encuentran cuando buscan lo que ofrecés.", "search", "#E8732A"],
+  ["Funciona en cualquier dispositivo", "El 70% de las visitas vienen desde el celular. Tu web se adapta perfectamente a teléfonos, tablets y computadoras.", "phone", "#E8732A"],
   ["Genera confianza", "Una web profesional transmite seriedad. Los clientes confían más en un negocio con presencia digital sólida.", "star", "#22C55E"],
 ]
 
@@ -49,7 +49,7 @@ const process = [
 
 const extras = [
   ["Posicionamiento SEO", "Optimizamos tu web para aparecer en los primeros resultados de Google.", "/servicios#seo-tecnico", "Saber más", "search", "#22C55E"],
-  ["Google Ads", "Gestionamos tu publicidad paga para conseguir clientes desde el primer día.", "/servicios#google-ads", "Saber más", "megaphone", "#F97316"],
+  ["Google Ads", "Gestionamos tu publicidad paga para conseguir clientes desde el primer día.", "/servicios#google-ads", "Saber más", "megaphone", "#E8732A"],
   ["Mantenimiento Web", "Tu web siempre actualizada, segura y funcionando.", WA.mantenimiento, "Consultar", "gear", "#94A3B8"],
 ]
 
@@ -69,31 +69,63 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <section className="site-hero relative flex flex-col items-center overflow-hidden bg-[#0A0F1E] px-4 text-center">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(59,130,246,0.12),transparent_60%)]" />
-        <div className="relative z-10 mb-6">
-          <ActiveBadge text="Respondemos en el día" />
-        </div>
-        <h1 className="relative z-10 mb-5 max-w-4xl text-center text-4xl font-bold leading-tight text-[#F8FAFC] md:text-5xl lg:text-6xl">
-          Tu página web profesional,{" "}
-          <span className="bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">lista para conseguir clientes</span>
-        </h1>
-        <p className="relative z-10 mb-8 max-w-2xl text-center text-base leading-relaxed text-[#94A3B8] md:text-lg">
-          Diseñamos y desarrollamos sitios web para pymes, emprendedores y profesionales. Rápidos, modernos y optimizados para que Google te encuentre.
-        </p>
-        <div className="relative z-10 mb-10 flex flex-col gap-4 sm:flex-row">
-          <a href={WA.general} target="_blank" rel="noopener noreferrer" className="btn-primary">
-            Consultar por WhatsApp
-          </a>
-          <a href="#disenos" className="flex h-12 items-center justify-center rounded-lg border border-[#1E293B] px-6 text-sm font-medium text-[#94A3B8] transition-all duration-200 hover:border-[#3B82F6] hover:text-[#F8FAFC]">
-            Ver nuestros diseños 
-          </a>
-        </div>
-        <div className="mb-10 h-px w-full max-w-2xl bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent" />
-        <div className="hidden w-full max-w-3xl grid-cols-2 gap-8 text-center md:grid md:grid-cols-3">
-          <div><div className="mb-1 text-2xl font-bold text-[#F8FAFC] md:text-3xl">100+</div><div className="text-xs text-[#94A3B8]">sitios desarrollados</div></div>
-          <div><div className="mb-1 text-2xl font-bold text-[#F8FAFC] md:text-3xl">En el día</div><div className="text-xs text-[#94A3B8]">tiempo de respuesta</div></div>
-          <div><div className="mb-1 text-2xl font-bold text-[#F8FAFC] md:text-3xl">100%</div><div className="text-xs text-[#94A3B8]">proyectos entregados</div></div>
+      <section className="hero-bg hero-bg-home site-hero">
+        <div className="section-wrapper grid items-center gap-12 lg:grid-cols-2">
+          <div className="animate-fade-in">
+            <ActiveBadge text="Respondemos en el día" />
+            <div className="rule-gold mb-7 mt-7" />
+            <h1 className="text-4xl font-bold leading-[1.04] md:text-6xl lg:text-[4.1rem]">
+              Tu página web profesional,{" "}
+              <span className="text-orange">lista para conseguir clientes</span>
+            </h1>
+            <p className="mt-7 max-w-xl text-lg leading-8 text-text-secondary">
+              Diseñamos y desarrollamos sitios web para pymes, emprendedores y profesionales. Rápidos, modernos y optimizados para que Google te encuentre.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href={WA.general} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                Consultar por WhatsApp
+              </a>
+              <a href="#disenos" className="btn-outline">
+                Ver nuestros diseños
+              </a>
+            </div>
+            <div className="mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-line pt-8">
+              {[["100+", "sitios desarrollados"], ["En el día", "tiempo de respuesta"], ["100%", "proyectos entregados"]].map(([value, label]) => (
+                <div key={label}>
+                  <div className="font-display text-3xl font-bold text-graphite">{value}</div>
+                  <div className="text-xs text-text-secondary">{label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Visual editorial asimétrico (mockup en CSS puro) */}
+          <div className="animate-fade-in relative hidden lg:block">
+            <div className="absolute -right-5 -top-5 h-28 w-28 rounded-[4px] border-2 border-gold/50" aria-hidden="true" />
+            <div className="absolute -bottom-7 -left-7 h-24 w-24 rounded-[4px] bg-orange/10" aria-hidden="true" />
+            <div className="relative rounded-[6px] border border-line bg-white shadow-[0_45px_90px_-45px_rgba(16,24,40,0.45)]">
+              <div className="flex items-center gap-2 border-b border-line px-5 py-3.5">
+                <span className="h-3 w-3 rounded-full bg-orange" />
+                <span className="h-3 w-3 rounded-full bg-gold" />
+                <span className="h-3 w-3 rounded-full bg-graphite/20" />
+              </div>
+              <div className="space-y-4 p-7">
+                <div className="h-3.5 w-1/3 rounded bg-graphite" />
+                <div className="h-2.5 w-full rounded bg-graphite/10" />
+                <div className="h-2.5 w-5/6 rounded bg-graphite/10" />
+                <div className="mt-5 flex h-28 items-end gap-3 rounded-[4px] bg-gradient-to-br from-graphite to-graphite-light p-4">
+                  <div className="h-1/3 w-1/4 rounded-sm bg-orange/70" />
+                  <div className="h-2/3 w-1/4 rounded-sm bg-gold/70" />
+                  <div className="h-full w-1/4 rounded-sm bg-orange" />
+                  <div className="h-1/2 w-1/4 rounded-sm bg-cream/40" />
+                </div>
+                <div className="flex gap-3 pt-1">
+                  <div className="h-9 w-32 rounded-[4px] bg-orange" />
+                  <div className="h-9 w-24 rounded-[4px] border border-graphite/20" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -102,7 +134,7 @@ export default function HomePage() {
           <h2 className="text-center text-3xl font-bold md:text-5xl">Por qué una web profesional cambia todo</h2>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {valueProps.map(([title, text, icon, color]) => (
-              <article key={title} className="card">
+              <article key={title} className="card reveal">
                 <Icon name={icon} color={color} />
                 <h3 className="mt-5 text-2xl font-bold">{title}</h3>
                 <p className="mt-4 leading-7 text-text-secondary">{text}</p>
@@ -120,13 +152,13 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {webTypes.map(([title, text, href, cta]) => (
-              <article key={title} className="card flex min-h-[260px] flex-col">
+              <article key={title} className="card reveal flex min-h-[260px] flex-col">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="mt-4 flex-1 leading-7 text-text-secondary">{text}</p>
                 {href.startsWith("https://") ? (
-                  <a href={href} target="_blank" rel="noopener noreferrer" className="mt-6 font-semibold text-brand-orange">{cta} </a>
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="group mt-6 inline-flex items-center gap-1.5 font-semibold text-orange">{cta} <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></a>
                 ) : (
-                  <Link href={href} className="mt-6 font-semibold text-brand-orange">{cta} </Link>
+                  <Link href={href} className="group mt-6 inline-flex items-center gap-1.5 font-semibold text-orange">{cta} <span className="transition-transform duration-300 group-hover:translate-x-1">→</span></Link>
                 )}
               </article>
             ))}
@@ -150,9 +182,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-navy py-20">
+      <section className="bg-graphite py-24">
         <div className="section-wrapper">
-          <h2 className="text-center text-3xl font-bold md:text-5xl">Cómo es trabajar con nosotros</h2>
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mx-auto mb-5 h-px w-16 bg-gold" />
+            <h2 className="text-3xl font-bold text-white md:text-5xl">Cómo es trabajar con nosotros</h2>
+          </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {process.map(([number, title, text]) => <Step key={number} number={number} title={title} text={text} />)}
           </div>
@@ -167,7 +202,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {extras.map(([title, text, href, cta, icon, color]) => (
-              <article key={title} className="card">
+              <article key={title} className="card reveal">
                 <Icon name={icon} color={color} />
                 <h3 className="mt-5 text-2xl font-bold">{title}</h3>
                 <p className="mt-4 leading-7 text-text-secondary">{text}</p>
@@ -182,9 +217,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-navy py-20">
-        <div className="section-wrapper grid gap-6 text-center md:grid-cols-3">
-          {stats.map(([value, label]) => <div key={label}><p className="text-5xl font-extrabold text-brand-blue md:text-6xl">{value}</p><p className="mt-2 text-sm text-text-secondary">{label}</p></div>)}
+      <section className="bg-graphite py-24">
+        <div className="section-wrapper grid gap-10 text-center md:grid-cols-3">
+          {stats.map(([value, label], i) => (
+            <div key={label} className="reveal">
+              <p className={`font-display text-5xl font-bold md:text-6xl ${i === 1 ? "text-gold" : "text-orange"}`}>{value}</p>
+              <p className="mt-3 text-sm text-cream/60">{label}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -197,10 +237,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue py-20 text-center">
+      <section className="bg-graphite py-24 text-center">
         <h2 className="text-3xl font-bold text-white md:text-5xl">Empezá con tu página web hoy</h2>
-        <p className="mt-5 text-white/90">Contanos tu proyecto y te respondemos en el día.</p>
-        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 font-semibold text-[#1E3A5F]">Consultar por WhatsApp</a>
+        <p className="mt-5 text-cream/70">Contanos tu proyecto y te respondemos en el día.</p>
+        <a href={WA.general} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-[4px] bg-orange px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-hover hover:scale-[1.02]">Consultar por WhatsApp</a>
       </section>
       <JsonLd data={websiteOrganizationGraph()} />
       <JsonLd data={faqSchema(faqs)} />
@@ -218,14 +258,14 @@ function Icon({ name, color }: { name: string; color: string }) {
   if (name === "gear") svg = <svg {...props}><circle cx="12" cy="12" r="3" /><path d="M19.4 15a8 8 0 000-6M4.6 9a8 8 0 000 6M15 19.4a8 8 0 01-6 0M9 4.6a8 8 0 016 0" /></svg>
 
   return (
-    <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+    <span className="flex h-14 w-14 items-center justify-center rounded-[4px] border border-line bg-cream">
       {svg}
     </span>
   )
 }
 
 function Step({ number, title, text }: { number: string; title: string; text: string }) {
-  return <article className="card"><p className="text-4xl font-extrabold text-brand-blue">{number}</p><h3 className="mt-4 text-xl font-bold">{title}</h3><p className="mt-3 text-sm leading-6 text-text-secondary">{text}</p></article>
+  return <article className="card reveal"><p className="font-display text-4xl font-bold text-orange">{number}</p><h3 className="mt-4 text-xl font-bold">{title}</h3><p className="mt-3 text-sm leading-6 text-text-secondary">{text}</p></article>
 }
 
 

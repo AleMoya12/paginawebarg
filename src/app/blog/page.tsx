@@ -11,32 +11,37 @@ export const metadata: Metadata = {
 }
 
 const categoryColors: Record<string, string> = {
-  "Desarrollo Web": "bg-[#3B82F6]/15 text-[#3B82F6] border border-[#3B82F6]/30",
-  "IA & Tecnología": "bg-[#F97316]/15 text-[#F97316] border border-[#F97316]/30",
-  "Industria Tech": "bg-[#22C55E]/15 text-[#22C55E] border border-[#22C55E]/30",
-  "Tecnología": "bg-[#94A3B8]/20 text-[#94A3B8] border border-[#94A3B8]/30",
+  "Desarrollo Web": "bg-orange/10 text-orange border border-orange/30",
+  "IA & Tecnología": "bg-graphite text-cream",
+  "Industria Tech": "bg-green-600/10 text-green-700 border border-green-600/30",
+  "Tecnología": "bg-graphite/5 text-graphite/70 border border-graphite/15",
 }
 
 export default function BlogPage() {
   return (
     <>
-      <section className="bg-[#0A0F1E] px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold text-[#F8FAFC] md:text-5xl">Blog</h1>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-[#94A3B8]">Desarrollo web, IA y tecnología para negocios reales.</p>
+      <section className="hero-bg hero-bg-blog site-hero">
+        <div className="section-wrapper">
+          <div className="max-w-3xl">
+            <div className="rule-gold mb-6" />
+            <h1 className="text-4xl font-bold md:text-6xl">Blog</h1>
+            <p className="mt-5 max-w-2xl text-lg text-text-secondary">Desarrollo web, IA y tecnología para negocios reales.</p>
+          </div>
+        </div>
       </section>
 
-      <section className="bg-[#0A0F1E] px-4 pb-20">
+      <section className="bg-cream px-4 pb-24 pt-6">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((article) => (
-            <article key={article.slug} className="group flex flex-col rounded-2xl border border-[#1E293B] bg-[#1E293B] p-6 transition-all duration-300 hover:border-[#3B82F6] hover:shadow-xl hover:shadow-blue-500/5">
+            <article key={article.slug} className="card reveal group flex flex-col">
               <span className={`mb-4 self-start rounded-full px-3 py-1 text-xs font-semibold ${categoryColors[article.category]}`}>{article.category}</span>
-              <h2 className="mb-3 text-lg font-semibold leading-snug text-[#F8FAFC] transition-colors group-hover:text-[#3B82F6]">
+              <h2 className="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-orange">
                 <Link href={`/blog/${article.slug}`}>{article.title}</Link>
               </h2>
-              <p className="mb-4 flex-1 text-sm leading-relaxed text-[#94A3B8]">{article.excerpt}</p>
-              <div className="mt-auto flex items-center justify-between border-t border-[#0A0F1E] pt-4">
-                <div className="flex items-center gap-2 text-xs text-[#94A3B8]"><span>{article.readTime}</span><span>·</span><span>{article.date}</span></div>
-                <Link href={`/blog/${article.slug}`} className="text-sm font-medium text-[#F97316] transition-colors hover:text-[#EA580C]">Leer más </Link>
+              <p className="mb-4 flex-1 text-sm leading-relaxed text-text-secondary">{article.excerpt}</p>
+              <div className="mt-auto flex items-center justify-between border-t border-line pt-4">
+                <div className="flex items-center gap-2 text-xs text-text-secondary"><span>{article.readTime}</span><span>·</span><span>{article.date}</span></div>
+                <Link href={`/blog/${article.slug}`} className="text-sm font-medium text-orange transition-colors hover:text-orange-hover">Leer más →</Link>
               </div>
             </article>
           ))}
