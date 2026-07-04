@@ -171,6 +171,7 @@ button {
   .hero-bg-design-7 { --hero-base: #f3efe6; --hero-accent-rgb: 232, 115, 42; } /* web-para-hoteles — arena/avena */
   .hero-bg-design-8 { --hero-base: #e9f0f1; --hero-accent-rgb: 212, 175, 55; } /* web-para-escuelas — aqua pálido */
   .hero-bg-design-9 { --hero-base: #f4ece6; --hero-accent-rgb: 232, 115, 42; } /* web-para-barrios-cerrados — arcilla clara */
+  .hero-bg-design-10 { --hero-base: #eaedf2; --hero-accent-rgb: 212, 175, 55; } /* web-para-estudios-juridicos — azul pizarra sobrio */
   .hero-bg-portfolio { --hero-base: #f1eee9; --hero-accent-rgb: 232, 115, 42; } /* greige */
   .hero-bg-servicios { --hero-base: #eceff3; --hero-accent-rgb: 232, 115, 42; } /* porcelana fría */
   .hero-bg-nosotros { --hero-base: #ebf1ed; --hero-accent-rgb: 212, 175, 55; } /* celadón */

@@ -8,6 +8,7 @@ export const HERO_BACKGROUNDS = {
   "/web-para-hoteles": "hero-bg hero-bg-design-7",
   "/web-para-escuelas": "hero-bg hero-bg-design-8",
   "/web-para-barrios-cerrados": "hero-bg hero-bg-design-9",
+  "/web-para-estudios-juridicos": "hero-bg hero-bg-design-10",
   "/portfolio": "hero-bg hero-bg-portfolio",
   "/servicios": "hero-bg hero-bg-servicios",
   "/nosotros": "hero-bg hero-bg-nosotros",

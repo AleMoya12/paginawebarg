@@ -13,6 +13,7 @@ export const NAV_LINKS = [
       { label: "Web para Hoteles", href: "/web-para-hoteles" },
       { label: "Web para Escuelas", href: "/web-para-escuelas" },
       { label: "Web para Barrios Cerrados", href: "/web-para-barrios-cerrados" },
+      { label: "Web para Estudios Jurídicos", href: "/web-para-estudios-juridicos" },
     ],
   },
   { label: "Servicios", href: "/servicios" },
@@ -32,6 +33,7 @@ export const FOOTER_LINKS = {
     { label: "Web para Hoteles", href: "/web-para-hoteles" },
     { label: "Web para Escuelas", href: "/web-para-escuelas" },
     { label: "Web para Barrios Cerrados", href: "/web-para-barrios-cerrados" },
+    { label: "Web para Estudios Jurídicos", href: "/web-para-estudios-juridicos" },
   ],
   empresa: [
     { label: "Inicio", href: "/" },

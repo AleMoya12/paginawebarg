@@ -78,15 +78,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.paginawebarg.com.ar",
   },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "32x32" },
-      { url: "/icon.png", type: "image/png", sizes: "16x16" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
-    shortcut: "/favicon.ico",
-  },
   verification: {
     google: "GfAAmMnqqksFc8T9AAM7uLWSqwYlDZNfoGLoZPpJ9fw",
   },

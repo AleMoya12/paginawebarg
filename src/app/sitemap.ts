@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/web-para-hoteles`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/web-para-escuelas`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/web-para-barrios-cerrados`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/web-para-estudios-juridicos`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${base}/privacidad`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${base}/terminos-y-condiciones`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
