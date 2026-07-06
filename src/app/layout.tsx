@@ -4,7 +4,6 @@ import "./globals.css"
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import WhatsAppButton from "@/components/layout/WhatsAppButton"
-import TopBanner from "@/components/ui/TopBanner"
 import ScrollReveal from "@/components/ui/ScrollReveal"
 import ScrollToTop from "@/components/layout/ScrollToTop"
 
@@ -93,7 +92,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
       <body className={`${dmSans.className} antialiased`}>
         <ScrollToTop />
-        <TopBanner />
         <Header />
         <main>{children}</main>
         <Footer />
