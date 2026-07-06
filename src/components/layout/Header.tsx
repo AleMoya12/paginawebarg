@@ -161,8 +161,10 @@ export default function Header() {
 
       {/* Mobile menu con animación de apertura */}
       <div
-        className={`overflow-hidden border-b border-line-dark bg-graphite transition-[max-height,opacity] duration-500 ease-in-out md:hidden ${
-          mobileOpen ? "max-h-[640px] opacity-100" : "max-h-0 opacity-0"
+        className={`overflow-x-hidden overscroll-contain border-b border-line-dark bg-graphite transition-[max-height,opacity] duration-500 ease-in-out md:hidden ${
+          mobileOpen
+            ? "max-h-[calc(100dvh-4.5rem)] overflow-y-auto opacity-100"
+            : "max-h-0 overflow-y-hidden opacity-0"
         }`}
       >
         <div className="flex flex-col items-stretch gap-1 px-6 py-6">

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer"
 import WhatsAppButton from "@/components/layout/WhatsAppButton"
 import TopBanner from "@/components/ui/TopBanner"
 import ScrollReveal from "@/components/ui/ScrollReveal"
+import ScrollToTop from "@/components/layout/ScrollToTop"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
       <body className={`${dmSans.className} antialiased`}>
+        <ScrollToTop />
         <TopBanner />
         <Header />
         <main>{children}</main>
